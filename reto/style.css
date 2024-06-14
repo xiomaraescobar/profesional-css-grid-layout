@@ -1,0 +1,16 @@
+.container {
+    background: rgb(249, 225, 185);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80px;
+    height: 80px;
+  }
+  
+  .item:nth-child(1) {
+    background: rgb(195, 183, 238);
+    place-self: center stretch;
+  }
+  
+  .item:not(:nth-child(1)) {
+    background: rgb(186, 244, 238);
+  }
